@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'course-project';
+
+  sectionID: string = "recipe";
+
+
+  onRecipeShown(recipeID: string) {
+    this.sectionID = recipeID;
+  }
+
+  onShoppingShown(shoppingID: string) {
+    this.sectionID = shoppingID;
+  }
+
 }
