@@ -1,11 +1,11 @@
 <div class="row">
   <div class="col-12">
-    <img src="" alt="">
+    <img [src]="detailProp.imageUrl" alt="">
   </div>
 </div>
 <div class="row">
   <div class="col-12">
-    <h3>Recipe Name</h3>
+    <h3>{{ detailProp.name }}</h3>
   </div>
 </div>
 <div class="row">
@@ -20,7 +20,7 @@
 </div>
 <div class="row">
   <div class="col-12">
-    <span>Description</span>
+    <span>{{ detailProp.description }}</span>
   </div>
 </div>
 <div class="row">

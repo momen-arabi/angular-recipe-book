@@ -1,3 +1,3 @@
 <app-header (recipeShown)="onRecipeShown($event)" (shoppingShown)="onShoppingShown($event)"></app-header>
-<app-recipes [visProp]="sectionID" *ngIf="sectionID === 'recipe' ? true:false "></app-recipes>
-<app-shopping-list [visProp]="shoppingID" *ngIf="sectionID === 'shopping' ? true:false "></app-shopping-list>
+<app-recipes [visProp]="sectionID" *ngIf="sectionID === 'recipe'"></app-recipes>
+<app-shopping-list [visProp]="sectionID" *ngIf="sectionID === 'shopping'"></app-shopping-list>
