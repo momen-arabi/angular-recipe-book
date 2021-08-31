@@ -15,8 +15,8 @@ export class RecipesComponent implements OnInit {
 
   onRecipeShown(details: Recipe) {
     this.recipeItemDetails = details;
-    console.log(this.recipeItemDetails);
-    console.log("Recipe Clicked");
+    // console.log(this.recipeItemDetails);
+    // console.log("Recipe Clicked");
   }
 
   constructor() { }
