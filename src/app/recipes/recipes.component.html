@@ -4,7 +4,8 @@
       <app-recipe-list (recipeDetails)="onRecipeShown($event)"></app-recipe-list>
     </div>
     <div class="col-md-7">
-      <app-recipe-detail [detailProp]="recipeItemDetails"></app-recipe-detail>
+      <app-recipe-detail *ngIf="recipeItemDetails; else no_selection" [detailProp]="recipeItemDetails"></app-recipe-detail>
+      <ng-template #no_selection>NO RECIPE SELECTED</ng-template>
     </div>
   </div>
 </div>
