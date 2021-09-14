@@ -13,10 +13,10 @@
         <a class="nav-link" (click)="shoppingComponentShow()">Shopping List</a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a (click)="onClickToggle()" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Manage
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <div *appDropdown="!clicked" class="manage-dropdown">
           <a class="dropdown-item" href="#">Save</a>
           <a class="dropdown-item" href="#">Fetch</a>
         </div>
