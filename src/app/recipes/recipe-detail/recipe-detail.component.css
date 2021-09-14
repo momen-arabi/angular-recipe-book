@@ -1,3 +1,14 @@
 img {
   max-height: 60vh;
 }
+.recipe-dropdown {
+  z-index: 999;
+  background: white;
+  position: absolute;
+  width: 200px;
+  border: 1px solid rgba(0,0,0,0.5);
+  border-radius: 10px;
+}
+.recipe-dropdown a {
+  border-radius: 10px;
+}
