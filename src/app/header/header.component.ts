@@ -9,9 +9,16 @@ export class HeaderComponent implements OnInit {
   @Output() recipeShown = new EventEmitter<string>();
   @Output() shoppingShown = new EventEmitter<string>();
 
+  clicked = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onClickToggle() {
+    this.clicked = !this.clicked;
+    console.log(this.clicked)
   }
 
   recipeComponentShow() {
