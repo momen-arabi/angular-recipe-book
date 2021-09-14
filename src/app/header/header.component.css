@@ -1,3 +1,20 @@
 .nav-link {
   cursor:pointer;
 }
+/* .navbar {
+  max-height: 50px;
+} */
+.manage-dropdown {
+  z-index: 999;
+  background: #212529;
+  position: absolute;
+  width: 150px;
+  border-radius: 10px;
+}
+.manage-dropdown a {
+  color: white;
+  border-radius: 10px;
+}
+.manage-dropdown a:hover {
+  color: #212529;
+}
