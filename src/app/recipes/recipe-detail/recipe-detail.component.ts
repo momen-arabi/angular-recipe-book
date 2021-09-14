@@ -10,6 +10,12 @@ import { Recipe } from '../recipes.model';
 export class RecipeDetailComponent implements OnInit {
   @Input() detailProp: Recipe;
 
+  clicked = false;
+
+  onClickToggle() {
+    this.clicked = !this.clicked;
+  }
+
   constructor() { }
 
   ngOnInit(): void {
